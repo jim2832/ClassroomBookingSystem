@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>新使用者註冊</title>
+    <style>
+        /* 置中 */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("./classroom.jpg");
+			background-color: rgba(255,255,255,0.2);
+    		background-blend-mode: lighten;
+			background-size: cover;
+			background-repeat: no-repeat;
+        }
+        /* CSS樣式 */
+        form {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            max-width: 400px;
+            width: 100%;
+        }
+        input[type="SID"],
+        input[type="password"],
+        input[type="name"],
+        input[type="serial_number"],
+        input[type="email"],
+        input[type="phone"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            width: 100%;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4b93ff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #1e78ff;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="register.php">
+        <h1>新使用者註冊</h1>
+        <!-- <label for="SID">學號:</label> -->
+        <h3>學號:</h3>
+        <input type="SID" id="SID" name="SID" required>
+        
+        <!-- <label for="password">密碼:</label> -->
+        <h3>密碼:</h3>
+        <input type="password" id="password" name="password" required>
+        
+        <!-- <label for="name">姓名:</label> -->
+        <h3>姓名:</h3>
+        <input type="name" id="name" name="name" required>
+        
+        <!-- <label for="serial_number">實驗室編號:</label> -->
+        <h3>實驗室編號:</h3>
+        <input type="serial_number" id="serial_number" name="serial_number" required>
+        
+        <!-- <label for="email">電子郵件:</label> -->
+        <h3>電子郵件:</h3>
+        <input type="email" id="email" name="email" required>
+        
+        <!-- <label for="phone">聯絡電話:</label> -->
+        <h3>聯絡電話:</h3>
+        <input type="phone" id="phone" name="phone" required>
+        
+        <input type="submit" value="註冊">
+    </form>
+</body>
+</html>
